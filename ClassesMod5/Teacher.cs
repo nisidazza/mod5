@@ -10,5 +10,13 @@ namespace ClassesMod5
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Subject { get; set; }
+
+
+        public Teacher(string first, string last, string subject)
+        {
+            FirstName = first;
+            LastName = last;
+            Subject = subject;
+        }
     }
 }

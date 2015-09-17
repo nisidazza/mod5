@@ -7,8 +7,14 @@ namespace ClassesMod5
 {
     public class UProgram 
     {
-        public string Credits { get; set; }
-        public string Degree { get; set; }
+        public int Credits { get; set; }
+        public Degree Degree { get; set; }
         public string Duration { get; set; }
+
+        public UProgram(int credits, string duration)
+        {
+            Credits = credits;
+            Duration = duration;
+        }
     }
 }
