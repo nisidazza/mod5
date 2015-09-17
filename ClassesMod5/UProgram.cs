@@ -5,7 +5,10 @@ using System.Text;
 
 namespace ClassesMod5
 {
-    class UProgram
+    public class UProgram 
     {
+        public string Credits { get; set; }
+        public string Degree { get; set; }
+        public string Duration { get; set; }
     }
 }
