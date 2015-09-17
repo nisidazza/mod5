@@ -9,12 +9,17 @@ namespace ClassesMod5
     {
         static void Main(string[] args)
         {
-            Student[] student = new Student[3];
-            student[0] = new Student("Hanna", "Grey", 12 / 05 / 1985, "Cable St. 3", "Lower St. 4", "Los Angeles", "California", 90003, "USA");
-            var student2 = new Student();
-            var student3 = new Student();
 
-            Console.WriteLine(Student.countEnrolledStudent);
+            var student1 = new Student("Hanna","Gray",new DateTime(1985,3,15));
+            var student2 = new Student("James", "Hunt", new DateTime(1974, 08, 24));
+            var student3 = new Student("Elijah", "Jordan Wood", new DateTime(1981, 1, 28));
+
+            Course course = new Course("Programming with C#");
+            
+            
+
+
+         
         }
     }
 }

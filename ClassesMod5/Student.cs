@@ -17,6 +17,19 @@ namespace ClassesMod5
         public int ZIP { get; set; }
         public string Country { get; set; }
 
+        public Student(string first, string last, DateTime birthday) // string add1, string add2, string city, string stateprovince, int zip, string country)
+        {
+           FirstName = first;
+           LastName = last;
+           Birthday = birthday;
+           //AddressLine1 = add1;
+           //AddressLine2 = add2;
+           //City = city;
+           //StateProvince = stateprovince;
+           //ZIP = zip;
+           //Country = country;
+        }
+
         public static int countEnrolledStudent = 0;
 
         public Student()
@@ -28,21 +41,6 @@ namespace ClassesMod5
         {
             return countEnrolledStudent;
         }
-
-        public Student(string first, string last, DateTime birthday, string add1, string add2, string city, string stateprovince, int zip, string country)
-        {
-            this.FirstName = first;
-            this.LastName = last;
-            this.Birthday = birthday;
-            this.AddressLine1 = add1;
-            this.AddressLine2 = add2;
-            this.City = city;
-            this.StateProvince = stateprovince;
-            this.ZIP = zip;
-            this.Country = country;
-        }
-        
-        
     }
 }
 
