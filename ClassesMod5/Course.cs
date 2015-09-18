@@ -14,38 +14,21 @@ namespace ClassesMod5
         public string name;
         public string Name { get; set; }
 
-        public Teacher[] teacher;
-        public Teacher[] Teacher
-        {
-            get
-            {
-                return teacher;
-            }
-
-            set
-            {
-                teacher = value;
-            }
-        }
-
-        public Student[] student;
-        public Student[] Student 
-        {
-            get
-            {
-                return student;
-            }
-            set
-            {
-                student = value;
-            }
-        }
-
         public Course(string name)
         {
             Name = name;
         }
 
-       
+        Student[] student = new Student[3];
+
+        public void AddStudent(Student student);
+
+        Teacher[] teacher = new Teacher[3];
+
+        public void AddTeacher(Teacher teacher);
+
+        
+    
+
     }
 }

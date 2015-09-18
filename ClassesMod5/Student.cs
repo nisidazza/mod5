@@ -7,6 +7,7 @@ namespace ClassesMod5
 {
     public class Student
     {
+        public int countStudent;
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime Birthday { get; set; }
@@ -30,17 +31,14 @@ namespace ClassesMod5
            //Country = country;
         }
 
-        public static int countEnrolledStudent = 0;
-
-        public Student()
+        public static int CountStudent()
         {
-            countEnrolledStudent++;
-        }
+            Student[] student = new Student[3];
+            int countStudent = student.Count(i => i != null);
 
-        public static int GetEnrolledStudent()
-        {
-            return countEnrolledStudent;
+            return countStudent;
         }
+        
     }
 }
 
