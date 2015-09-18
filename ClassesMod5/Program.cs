@@ -7,22 +7,24 @@ namespace ClassesMod5
 {
     class Program
     {
+        public enum StudentEnrolled
+        { 
+            Student
+        }
+
         static void Main(string[] args)
         {
 
-            var student1 = new Student("Hanna", "Gray", new DateTime(1985, 3, 15));
-            var student2 = new Student("James", "Hunt", new DateTime(1974, 08, 24));
-            var student3 = new Student("Elijah", "Jordan Wood", new DateTime(1981, 1, 28));
+            Student student1 = new Student("Hanna", "Gray", new DateTime(1985, 3, 15));
+            Student student2 = new Student("James", "Hunt", new DateTime(1974, 08, 24));
+            Student student3 = new Student("Elijah", "Jordan Wood", new DateTime(1981, 1, 28));
 
             Course course = new Course("Programming with C#");
-            {
-                course.AddStudent(student1);
-                course.AddStudent(student2);
-                course.AddStudent(student3);
-            }
+            course.AddStudent(student1);
+            course.AddStudent(student2);
+            course.AddStudent(student3);
 
             Teacher teacher = new Teacher("Adam", "Smith", "math");
-
             course.AddTeacher(teacher);
 
             Degree degree = new Degree("Bachelor of Science", 8.5);
