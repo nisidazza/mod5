@@ -7,28 +7,34 @@ namespace ClassesMod5
 {
     public class Course
     {
-        //public string Subject { get; set; }
-        //public string AcademicTerms { get; set; }
-        //public double Grade { get; set; }
-
-        public string name;
+    
+        public string _name;
         public string Name { get; set; }
+        Student[] students = new Student[3];
+        Teacher[] teachers = new Teacher[3];
+        private int numberOfStudents;
+        private int numberOfTeachers;
 
-        public Course(string name)
+
+        public Course(string _name)
         {
-            Name = name;
+            Name = _name;
         }
 
-        Student[] student = new Student[3];
+        public void AddStudent(Student student)
+        { 
+            students[numberOfStudents] = students[3];
+            numberOfStudents++;
+        }
 
-        public void AddStudent(Student student);
-
-        Teacher[] teacher = new Teacher[3];
-
-        public void AddTeacher(Teacher teacher);
+        public void AddTeacher(Teacher teacher)
+        {
+            teachers[numberOfTeachers] = teachers[1];
+            numberOfTeachers++;
+        }
 
         
-    
 
+       
     }
 }
