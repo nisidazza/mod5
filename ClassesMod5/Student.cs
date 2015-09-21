@@ -22,21 +22,10 @@ namespace ClassesMod5
            FirstName = first;
            LastName = last;
            Birthday = birthday;
-           countStudentEnrolled = 0;
+           countStudentEnrolled ++;
         }
 
-        private static int countStudentEnrolled;
-        
-        public Student()
-        {
-            countStudentEnrolled++;
-        }
-
-        public void StudentEnrolled(Student student)
-        {
-            countStudentEnrolled = countStudentEnrolled + 1;
-        }
-        
+        private static int countStudentEnrolled = 0;         
     }
 }
 

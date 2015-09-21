@@ -23,18 +23,22 @@ namespace ClassesMod5
 
         public void AddStudent(Student student)
         { 
-            students[numberOfStudents] = students[3];
+            students[numberOfStudents] = student;
             numberOfStudents++;
         }
 
         public void AddTeacher(Teacher teacher)
         {
-            teachers[numberOfTeachers] = teachers[1];
+            teachers[numberOfTeachers] = teacher;
             numberOfTeachers++;
         }
 
-        
-
-       
+        public int NumberOfStudents
+        {
+            get
+            {
+                return numberOfStudents;
+            }
+        }       
     }
 }
