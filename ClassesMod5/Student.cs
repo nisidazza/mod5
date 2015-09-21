@@ -25,12 +25,7 @@ namespace ClassesMod5
            countStudentEnrolled = 0;
         }
 
-        private static int countStudentEnrolled;
-        
-        public Student()
-        {
-            countStudentEnrolled++;
-        }      
+        private static int countStudentEnrolled;         
     }
 }
 
