@@ -7,11 +7,7 @@ namespace ClassesMod5
 {
     class Program
     {
-        public enum StudentEnrolled
-        { 
-            Student
-        }
-
+        
         static void Main(string[] args)
         {
 
