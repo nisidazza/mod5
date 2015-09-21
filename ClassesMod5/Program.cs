@@ -33,8 +33,7 @@ namespace ClassesMod5
 
             Console.WriteLine("The {0} program contains the {1} degree", uProgram.Name, degree.Faculty);
             Console.WriteLine("The {0} degree contains the course {1}", degree.Faculty, course.Name);
-            Console.WriteLine("The {0} course contains {1} student(s)", course.Name);
-
+            Console.WriteLine("The {0} course contains {1} student(s)", course.Name, course.NumberOfStudents);
         }
     }
 }
