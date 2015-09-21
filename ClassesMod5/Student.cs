@@ -30,13 +30,7 @@ namespace ClassesMod5
         public Student()
         {
             countStudentEnrolled++;
-        }
-
-        public void StudentEnrolled(Student student)
-        {
-            countStudentEnrolled = countStudentEnrolled + 1;
-        }
-        
+        }      
     }
 }
 
