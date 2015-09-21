@@ -33,8 +33,12 @@ namespace ClassesMod5
             numberOfTeachers++;
         }
 
-        
-
-       
+        public int NumberOfStudents
+        {
+            get
+            {
+                return numberOfStudents;
+            }
+        }       
     }
 }
